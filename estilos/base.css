@@ -6,13 +6,23 @@ body {
     margin: 0;
 }
 
-body>header {
+header {
     background: #1D4D72;
     color: white;
     font-size: 22px;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding: 1rem;
+}
+
+header span {
+    margin-top: 10px;
+}
+
+
+header nav {
+    margin-top: 10px;
 }
 
 .navigation {
