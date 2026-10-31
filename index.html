@@ -1,14 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wdd 131</title>
+    <meta name="author" content="Yago Antunes Jorge">
+    <meta name="description"
+        content="Projeto módulo WDD 131 - Fundamentos da Web Dinâmica, para praticar criacao de paginas web utilizando HTML e CSS.">
+
+    <link rel="stylesheet" href="estilos/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <h1>Yago Antunes Jorge</h1>
+    <header>
+        <span id="titulo-curso">WDD 131: Fundamentos da Web Dinâmica</span>
+    </header>
+
+    <nav class="navigation">
+        <a href="https://br.linkedin.com/">LinkedIn</a>
+        <a href="https://byupw.instructure.com/">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=por&id=p7#p7">Escrituras</a>
+        <a href="#">Projeto Final</a>
+    </nav>
+
+    <main>
+        <h1>Yago Antunes Jorge</h1>
+        <section class="card">
+            <header>
+                <h2>Sobre mim</h2>
+            </header>
+            <div class="sobre-mim">
+                <p>
+                    Meu nome é Yago.Sou brasileiro, natural de São Paulo. Atualmente trabalho como
+                    Analista de TI. Gosto de tecnologia,
+                    programação e aprender coisas novas.
+                </p>
+
+                <img src="imagens/perfil.jpg" alt="Minha foto">
+            </div>
+
+            <h3>Ribeirão Preto, Brasil</h3>
+
+            <div class="sobre-mim">
+
+                <img src="imagens/bandeira-do-brasil.png" alt="Bandeira do Brasil">
+
+                <p>
+                    O Brasil é o maior país da América do Sul e possui uma grande diversidade cultural, natural e
+                    ambiental.
+                    É conhecido por suas belas praias, pela Floresta Amazônica, pelo Carnaval e por sua rica
+                    biodiversidade.
+                    Sua capital é Brasília, e o português é seu idioma oficial.
+                    O país também se destaca pela variedade de paisagens, sua culinária e suas tradições culturais.
+                </p>
+
+
+            </div>
+
+        </section>
+
+        <section class="card webrecursos">
+            <header>
+                <h2>Recursos Web Dev</h2>
+            </header>
+
+            <ul>
+                <li><a href="#">Comunidade Dev.to</a></li>
+                <li><a href="#">Revista Smashing</a></li>
+                <li><a href="#">CSS Tricks</a></li>
+                <li><a href="#">W3 Schools</a></li>
+                <li><a href="#">Udemy</a></li>
+                <li><a href="#">Imagem de Espaço Reservado Lorem Picsum</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> | Yago Antunes Jorge | Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+
 </body>
+
+<script src="scripts/obterdatas.js"></script>
 
 </html>
