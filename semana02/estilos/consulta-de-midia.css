@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid rgb(0 0 0 / 2%);
+    background-color: #CCCCFF;
+    padding: 7px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section {
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+
+section p,
+h2 {
+    padding: 5px;
+}
