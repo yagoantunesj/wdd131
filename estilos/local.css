@@ -10,6 +10,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -19,7 +20,7 @@ header {
     border-bottom: 9px solid #67443494;
 }
 
-main picture {
+picture img {
     border-bottom: 3px solid #67443494;
 }
 
@@ -61,5 +62,44 @@ footer {
     background-color: var(--cor-destaque2);
     text-align: center;
     padding: 10px;
+
+}
+
+/* Media query */
+@media screen and (min-width: 600px) {
+
+
+    picture {
+        flex: 1;
+    }
+
+    picture img {
+        position: relative;
+        border: none;
+    }
+
+    .section-left {
+        position: absolute;
+        background-color: aliceblue;
+        top: 100px;
+        left: 50px;
+
+    }
+
+    .section-right {
+        position: absolute;
+        background-color: aliceblue;
+        top: 450px;
+        right: 50px;
+    }
+
+    section h2 {
+        background-color: #055a05;
+        color: white;
+    }
+
+
+
+
 
 }
