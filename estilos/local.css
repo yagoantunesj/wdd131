@@ -1,4 +1,65 @@
+:root {
+    --cor-primaria: #055a05;
+    --cor-secundaria: #f4a261;
+    --cor-destaque1: #fdf6e4e1;
+    --cor-destaque2: #A68F7F;
+    --fonte-titulo: "Times New Roman", "Georgia", serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+header {
+    background-color: var(--cor-destaque1);
+    padding: 10px;
+    text-align: center;
+    border-bottom: 9px solid #67443494;
+}
+
+main picture {
+    border-bottom: 3px solid #67443494;
+}
+
+section {
+    border-bottom: 1px solid rgb(0 0 0 / 0.1);
+    padding: 10px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+section p {
+    padding: 5px;
+}
+
+.dados {
+    width: fit-content;
+    margin: 15px auto 0;
+}
+
+.dados p {
+    text-align: left;
+}
+
+.dados strong {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 8px;
+}
+
+section img {
+    display: block;
+    margin: 10px auto;
+}
+
+footer {
+    background-color: var(--cor-destaque2);
+    text-align: center;
+    padding: 10px;
+
 }

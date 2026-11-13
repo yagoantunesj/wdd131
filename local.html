@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Yago Antunes Jorge">
     <link rel="stylesheet" href="estilos/local.css">
+    <script src="scripts/local.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -20,26 +21,25 @@
             <img src="imagens/jericoacoara-large.webp" alt="praia-de-jericoacoara" width="100%" height="auto">
         </picture>
         <section>
-            <h2>Informações</h2>
-            <div>
-                <p><strong>Area:</strong></p>
-                <p><strong>População:</strong></p>
-                <p><strong>Capital:</strong> Brasília</p>
-                <p><strong>Moeda:</strong> BRL</p>
-                <p><strong>Fuso Horário:</strong> UTC+3</p>
-                <p><strong>Código Telefônico:</strong> +55</p>
-                <p><strong>Domínio:</strong> .br</p>
+            <h2>Dados</h2>
+            <div class="dados">
+                <p id="area"><strong>Area:</strong><span></span></p>
+                <p id="populacao"><strong>População:</strong><span></span></p>
+                <p id="moeda"><strong>Moeda:</strong><span></span></p>
+                <p id="fuso"><strong>Fuso Horário:</strong><span></span></p>
+                <p id="ccode"><strong>Código Telefônico:</strong><span></span></p>
+                <p id="dominio"><strong>Domínio:</strong><span></span></p>
             </div>
         </section>
 
         <section>
             <h2>Clima</h2>
-            <img src="" alt="">
-            <div>
-                <p><strong>Temperatura:</strong></p>
-                <p><strong>População:</strong></p>
-                <p><strong>Vento:</strong> BR</p>
-                <p><strong>Sensação Térmica:</strong></p>
+            <img src="imagens/icone-clima.svg" alt="Sol" width="90px">
+            <div class="dados">
+                <p id="temperatura"><strong>Temperatura:</strong><span></span></p>
+                <p id="condicao"><strong>Condição:</strong><span></span></p>
+                <p id="vento"><strong>Vento:</strong><span></span></p>
+                <p id="sensacaoter"><strong>Sensação Térmica:</strong><span></span></p>
             </div>
         </section>
     </main>
