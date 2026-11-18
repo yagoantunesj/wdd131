@@ -6,6 +6,19 @@ menu.addEventListener('click', () => {
     menu.classList.toggle('open')
 })
 
+const anoAtual = new Date().getFullYear();
+document.getElementById("anoatual").textContent = anoAtual;
+
+const lasUpdate = document.getElementById("ultimaModificacao");
+const hoje = new Date();
+
+lasUpdate.innerHTML = `Última modificação: <span class="destaque">${new Intl.DateTimeFormat(
+    "pt-br",
+    {
+        dateStyle: "short"
+    }
+).format(hoje)}</span>`;
+
 const templos = [
     {
         nomeDoTemplo: "Aba Nigeria",
@@ -99,3 +112,4 @@ templos.forEach((templo) => {
     </figure>
     `
 })
+
