@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+header,
+footer {
+    background-color: #3C0A64;
+    color: aliceblue;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    gap: 1rem;
+}
+
+.container {
+    display: flex;
+}
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+/* 
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+} */
+
+nav a:hover {
+    background-color: black;
+}
+
+nav a {
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    color: aliceblue;
+}
+
+ul {
+    list-style: none;
+    align-items: center;
+}
+
+/* ul li {
+    flex: 1 1 auto;
+} */
+
+#menu {
+    margin-left: auto;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: aliceblue;
+}
+
+#menu:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+main {
+    width: 100%;
+    padding: 0 20px 20px;
+}
+
+main h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* figure {
+    padding: 10px;
+    background-color: #EEEEEE;
+    border: 1px solid rgb(0 0 0 / 10%);
+    gap: 2rem;
+} */
+
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+#galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 5px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 20%);
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+
+#galeria figure {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #EEEEEE;
+    border: 1px solid rgb(0 0 0 / 10%);
+    gap: 1rem;
+}
+
+
+#galeria figure h2 {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+#galeria figcaption {
+    align-items: center;
+    text-align: center;
+}
+
+#galeria figcaption span {
+    color: #3C0A64;
+    font-weight: 450;
+}
+
+footer {
+    text-align: center;
+}

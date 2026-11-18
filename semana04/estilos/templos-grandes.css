@@ -1,0 +1,22 @@
+@media screen and (min-width: 60rem) {
+
+    header {
+        flex-direction: row;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    #galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav ul {
+        display: flex;
+    }
+}
