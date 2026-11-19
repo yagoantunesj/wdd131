@@ -32,14 +32,11 @@ nav.open {
     display: block;
 }
 
-/* 
-nav ul {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-} */
-
 nav a:hover {
+    background-color: black;
+}
+
+nav a.active {
     background-color: black;
 }
 
@@ -54,11 +51,9 @@ nav a {
 ul {
     list-style: none;
     align-items: center;
+    gap: 10px;
 }
 
-/* ul li {
-    flex: 1 1 auto;
-} */
 
 #menu {
     margin-left: auto;
@@ -84,6 +79,7 @@ ul {
 main {
     width: 100%;
     padding: 0 20px 20px;
+
 }
 
 main h1 {
@@ -92,18 +88,11 @@ main h1 {
 }
 
 
-/* figure {
-    padding: 10px;
-    background-color: #EEEEEE;
-    border: 1px solid rgb(0 0 0 / 10%);
-    gap: 2rem;
-} */
-
-
 #galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
+    justify-content: center;
 }
 
 #galeria img {
