@@ -151,5 +151,9 @@ document.querySelector('#small').addEventListener('click', () => {
     createTempleCard(templos.filter(temple => temple.area < 50000));
 })
 
+document.addEventListener("DOMContentLoaded", () => {
+    createTempleCard(templos);
+});
+
 
 
