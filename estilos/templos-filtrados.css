@@ -16,7 +16,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: left;
     gap: 1rem;
 }
 
@@ -82,7 +81,7 @@ main {
 
 }
 
-main h1 {
+main h2 {
     text-align: center;
     padding: 10px;
 }
